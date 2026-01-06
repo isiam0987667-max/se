@@ -43,32 +43,6 @@ a.video-link:hover { color:#0c47a1; }
   <span class="url-text">https://drive.google.com/file/d/1eA-_D8fFqEgthNyeFOqPOC6pAv0eg0Bq/view?usp=drive_link</span>
 </li></ul>
 
-<script>
-// Videos array with your links
-let videos = [
-  {url:"https://xhamster.desi/videos/paki-punjabi-11254951", title:"paki-punjabi-11254951"},
-  {url:"https://xhamster.desi/videos/paki-gf-sara-suck-bf-cock-2345434", title:"paki-gf-sara-suck-bf-cock-2345434"},
-  {url:"https://www.tnaflix.com/big-boobs/Cassies-Audition-Net-Video-Girls/video10096810", title:"video10096810"},
-  {url:"https://fyptt.to/21454/girl-with-glasses-revealing-her-natural-boobs-behind-sexy-crop-top/", title:"girl-with-glasses-revealing-her-natural-boobs-behind-sexy-crop-top"},
-  {url:"https://www.xnxx.tv/video-t0k4368/big_tits_latina_milf_fucked_at_gym_during-workout#show-related", title:"big_tits_latina_milf_fucked_at_gym_during-workout"}
-];
-
-// Render list
-const listEl = document.getElementById('videoList');
-
-function renderList(){
-  listEl.innerHTML = '';
-  videos.forEach(v=>{
-    const li = document.createElement('li');
-    li.innerHTML = `<a class="video-link" href="${v.url}" target="_blank">${v.title}</a>
-                    <span class="url-text">${v.url}</span>`;
-    listEl.appendChild(li);
-  });
-}
-
-// Initial render
-renderList();
-</script>
-
 </body>
 </html>
+
