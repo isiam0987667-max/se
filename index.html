@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Video Links</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+h2 { text-align:center; color:#333; }
+
+ul { list-style:none; padding:0; margin-top:20px; }
+li { margin:10px 0; }
+a.video-link {
+  color: #1a73e8;
+  text-decoration:underline;
+  font-size:18px;
+  cursor:pointer;
+}
+a.video-link:hover { color:#0c47a1; }
+.url-text { display:block; font-size:14px; color:#555; margin-top:2px; }
+</style>
+</head>
+<body>
+
+<h2>My Video Links</h2>
+
+<ul id="videoList"></ul>
+
+<script>
+// Videos array with your links
+let videos = [
+  {url:"https://xhamster.desi/videos/paki-punjabi-11254951", title:"paki-punjabi-11254951"},
+  {url:"https://xhamster.desi/videos/paki-gf-sara-suck-bf-cock-2345434", title:"paki-gf-sara-suck-bf-cock-2345434"},
+  {url:"https://www.tnaflix.com/big-boobs/Cassies-Audition-Net-Video-Girls/video10096810", title:"video10096810"},
+  {url:"https://fyptt.to/21454/girl-with-glasses-revealing-her-natural-boobs-behind-sexy-crop-top/", title:"girl-with-glasses-revealing-her-natural-boobs-behind-sexy-crop-top"},
+  {url:"https://www.xnxx.tv/video-t0k4368/big_tits_latina_milf_fucked_at_gym_during-workout#show-related", title:"big_tits_latina_milf_fucked_at_gym_during-workout"}
+];
+
+// Render list
+const listEl = document.getElementById('videoList');
+
+function renderList(){
+  listEl.innerHTML = '';
+  videos.forEach(v=>{
+    const li = document.createElement('li');
+    li.innerHTML = `<a class="video-link" href="${v.url}" target="_blank">${v.title}</a>
+                    <span class="url-text">${v.url}</span>`;
+    listEl.appendChild(li);
+  });
+}
+
+// Initial render
+renderList();
+</script>
+
+</body>
+</html>
